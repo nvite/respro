@@ -14,5 +14,17 @@
     "express"
   ],
   "author": "Evan Dudla <evan@nvite.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.53.0",
+    "util-extend": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nvite/respro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nvite/respro/issues"
+  },
+  "homepage": "https://github.com/nvite/respro"
 }
