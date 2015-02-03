@@ -68,14 +68,14 @@ function RequestErrorHandler(req, res, next) {
  * Handle a successful response from our resource request.
  */
 function RequestResponseHandler(req, res, next) {
-  return function (response, body) {
+  return function (response) {
 
     // Merge and set our user-defined headers and the headers we got from our
     // resource request.
     var responseHeaders = extend(getComparableObj(response.headers), req.resHeaders);
     res.set(responseHeaders);
 
-    res.send(body);
+    response.pipe(res);
   };
 }
 
