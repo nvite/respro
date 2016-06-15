@@ -19,7 +19,7 @@
     "request": "^2.53.0",
     "util-extend": "^1.0.1"
   },
-   "publishConfig": {
+  "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "repository": {
